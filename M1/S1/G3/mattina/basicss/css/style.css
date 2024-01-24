@@ -1,0 +1,46 @@
+/* commento
+selettore{
+    proprieta/regola:valore;
+}
+*/
+
+div{/*peso : 1*/
+    color: red;
+    background-color: blue;
+}
+
+h2 span{/* peso : 2 */
+    text-decoration: underline;
+}
+
+span{/*peso 1 quindi perde il conflitto in favore della riga 12*/
+    /*impatta tutti gli span che stanno fuori da un h2, ma non può
+    modificare quelli che si trovano all' interno di h2
+    */
+    text-decoration: overline;
+}
+
+#colore-verde{ /*peso : 100*/
+    color: green;
+}
+
+.colore-giallo{/* peso : 10*/
+    color: yellow;
+}
+
+.colere-blu{
+    color: blue;
+}
+
+/*selezione con multipli selettori per aumentare la specificità*/
+
+.colore-giallo.colore-blu{/*peso 20*/
+                     font-size: 30px;       
+                    }
+h3.colore-giallo.colore-blu{/*peso 21*/
+                            font-size: 45px;
+                        }
+
+h3{
+    color: red !important;
+}                        

@@ -1,0 +1,22 @@
+:root{
+    font-size: 25px;
+}
+
+.p1{
+    font-size: 16px;
+}
+
+.p2{
+    /*1em è uguale a 25px perchè l' elemento root ha i.postasto come diomensione di riferimento*/
+
+    font-size: 1rem;
+}
+
+.p3{
+    font-size: 10px;
+}
+
+.p3 p{
+    /*1em è uguale a 10px perchè il genitore ha impostasto come diomensione di riferimento*/
+    font-size: 1em;
+}
