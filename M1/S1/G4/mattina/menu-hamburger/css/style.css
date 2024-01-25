@@ -1,0 +1,22 @@
+input [type=checkbox]{
+    display: none;
+}
+
+input [type=checkbox]:checked + ul {
+    height: 200px;
+}
+
+ul{
+    background-color: red;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5;
+
+}
+
+li{
+    border: 1px solid #000;
+    padding: 5px;
+    height: 30%;
+
+}

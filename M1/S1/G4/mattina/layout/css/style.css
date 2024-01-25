@@ -1,0 +1,16 @@
+
+.container{
+    width: 1170px;
+    margin: auto;
+    background-color: aqua;
+}
+
+
+.colonna{
+    background-color: bisque;
+    height: 200px;
+    width: calc(100% / 4 - 3px);
+    margin-bottom: 10px;
+    display: inline-block;
+
+}
