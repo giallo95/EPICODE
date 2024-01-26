@@ -1,7 +1,18 @@
 /* Your styles here */
+body{
+   
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.65;
+    
+   
+    
+}
+
 header{
     background-color: black;
     text-align: center;
+    
+    
 }
 
 .logo{
@@ -9,3 +20,84 @@ header{
     margin-top: 25px;
     margin-bottom: 25px;
 }
+
+.main1{
+    
+    background-image: url(../img/banner.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+    text-align: center;
+    line-height: 1.5;
+    padding-bottom: 20px;
+    
+    
+    
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    color: #25a2c3 ;
+    font-size: 1.5rem;
+    font: bold;
+
+}
+
+.underh1{
+    padding-bottom: 10px;
+}
+
+.toplink{
+    border-radius: 5%;
+    font-size: small;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    background-color: #f04c2f;
+    padding: 7.5px;
+    
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main2{
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+    padding-bottom: 5%;
+}
+
+h3{
+    padding-top: 5%;
+    color: #25a2c3;
+   }
+
+.circle{
+    border-radius: 50%;
+    max-width: 50%;
+}
+
+.orangebox{
+    color: white;
+    text-align: center;
+    background-color: #e22d0e;
+    padding: 10%;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 5%;
+    
+}
+
+.corsivo{
+    font-style: oblique;
+    padding-bottom: 10%;
+}
+
+
+
+
