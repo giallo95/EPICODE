@@ -49,7 +49,7 @@ let x = 12
 myName = 'Giallonardi'
 console.log(myName)
 /*ERRORE
-const NAME = 'Giallo'
+const NAME = 'Verde'
 NAME = 'Blallo'
 D1.js:53  Uncaught TypeError: Assignment to constant variable.
 */
