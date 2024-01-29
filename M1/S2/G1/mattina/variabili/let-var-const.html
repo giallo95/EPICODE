@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //le variabili let e const sono sogette a blockscope
+        {
+            let a = 0;
+            console.log(a);
+
+        }
+
+        {
+            let a = 0;
+            console.log(a);
+
+        }
+            
+        let b = 1
+        {
+            console.log(b);
+        }
+
+        let c = 0; //nasce con 0, ma è globale
+        {
+            c=2; //il blocco agisce su variabile globale riassegnando a 2
+        }
+        console.log(c);//2
+
+        {
+            var d = 3; // essendo una var non ha blockescope quindi esiste globalmente anche se non nasce un blocco
+        }
+
+        console.log(d)
+
+
+        //errore :
+        let e = 4; 
+        {
+            //console.log(e); //Cannot access 'e' before initialization
+            let e = 5;
+        }
+
+        //const
+
+        const NOME = 'Mario';
+        console.log(NOME)
+        //NOME = 'Gianni' non posso riassegnare
+
+        const USER = {
+            nome : 'Mario',
+            cognome : 'Rossi'
+        }
+
+        //è possibile riassegnare i valori di un oggetto costante
+
+        //Object.freeze(USER) //cosi posso invece prevenire il riassegnamento
+
+        USER.cognome = 'Bianchi'
+        console.log(USER.cognome)
+
+        //valore predefinito
+
+        var t;
+        console.log(t)
+
+        
+
+    </script>
+</body>
+</html>
