@@ -182,7 +182,7 @@ if (val < 5) {
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
 */
-
+{
 const me = {
   name: 'John',
   lastName: 'Doe',
@@ -192,28 +192,50 @@ const me = {
 me.city = 'tornoto'
 
 console.log(me)
-/* SCRIVI QUI LA TUA RISPOSTA */
+
 
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+delete me.lastName
+console.log(me)
 
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
 
+}
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+{
+let arr = [
+
+]
+
+arr.push( 1,2,3,4,5,6,7,8,9,10)
+
+console.log(arr)
+
+}
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+{
+  let arr = [
+  
+  ]
+  
+  arr.push( 1,2,3,4,5,6,7,8,9,10)
+  
+  console.log(arr)
+
+  arr.splice(9,1, 100 )
+  console.log(arr)
+  
+  }
