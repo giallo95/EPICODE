@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arrPizza = ['Margherita','Diavola','Capricciosa']
+
+        for(let i = 0; i < arrPizza.length; i++){
+            console.log( arrPizza[i]);
+        }
+
+
+        let numeri = [14,3,6,11,9,15,1,4];
+        let somma = 0
+
+        for(let i = 0; i < numeri.length; i++){
+            somma += numeri[i]
+        }
+        console.log(somma)
+
+        //filtrare i numeri superiori a 5
+        let res = []
+        for(let i = 0; i < numeri.length; i++){
+            let numerociclato = numeri[i];
+            if(numerociclato > 5){
+                res.push(numeri[i])
+            }
+        }
+        console.log(res)
+
+        let user = [
+            {
+                nome: 'Mario',
+                cognome: 'Rossi'
+            },
+            {
+                nome: 'Maria',
+                cognome: 'Bianchi'
+            }
+        ]
+        let nomi = []
+        for(let i = 0; i < user.length; i++){
+            nomi.push(user[i].nome),
+            nomi.push(user[i].cognome)
+            
+        }
+        console.log(nomi)
+    </script>
+</body>
+</html>
