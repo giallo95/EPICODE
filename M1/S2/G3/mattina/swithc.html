@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <select id="pizza">
+        <option value="">--scegli la pizza--</option>
+        <option value="Margherita">Margherita</option>
+        <option value="Diavola">Diavola</option>
+        <option value="Capricciosa">Capricciosa</option>
+        <option value="4 Formaggi">4 Formaggi</option>
+        <option value="Hawaiana">Hawaiana</option>
+    </select>
+
+    <script>
+
+        function scegliPizza() {
+
+       
+
+        let pizza = '4 Formaggi'
+        
+
+        switch(pizza){
+            case 'Margherita':
+                console.log('La pizza costa 5 euro');
+                break;
+            case 'Diavola':    
+                console.log('La pizza Diavola costa 1 euro');
+                break;
+                case 'Capricciosa':    
+                case '4 Formaggi':    
+                console.log('Le pizze Capricciosa e 4 Formaggi costano 8 euro');
+                break;
+           
+            default:
+                console.log('La pizza ' + pizza + ' non è disponibile');
+
+                
+            }
+        }   
+
+    </script>
+</body>
+</html>
