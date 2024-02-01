@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        
+
+        function somma(a,b){ //a e b sono PARAMETRI NON VARIABILI
+            return a + b;
+        }
+
+        console.log(somma(4,8));
+        console.log(somma(2,2));
+
+        console.log(somma(2));//NaN perchè b sarà undefined
+
+        //valori predefiniti
+        function somma2(a = 0, b = 0){
+            
+
+            return a + b; 
+        }
+
+        console.log(somma2(2))// 2 perchè b ha valore predefinito 0 
+
+    </script>
+</body>
+</html>

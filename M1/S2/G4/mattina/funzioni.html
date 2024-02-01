@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        function mostraSaluto(){//definisce la funzione
+            
+            console.log('ciao')
+            console.log('ciao')
+            console.log('ciao')
+            console.log('ciao')
+
+        }
+
+        mostraSaluto()//invoca la funzione
+        
+        console.log(mostraSaluto)//ho dimenticato le parentesi tonde che avviano la funzione, quindin vedrò il
+                                 // il contenuto della funzione
+
+        console.log(mostraSaluto())//dato che la funzione non ha alcun return ho come valore undefined, qunid forse sto usandeo
+                                //come dato una funzione che non restituisce dati
+
+
+        console.error('======================================')
+
+
+        //funzioni che restituiscono dati
+
+
+        function restituisciSaluto(){
+            console.log('test')
+            return 'ciao';
+            
+        }
+
+        let saluto = restituisciSaluto()//posso salvare il risultato in una variabile
+
+        console.log(saluto)//e successivamente usarlo in una direttiva di output
+        console.log(restituisciSaluto(), saluto)//oppure usare direttament ela funzine come valore
+                            
+    </script>
+
+</body>
+</html>

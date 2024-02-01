@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    //    function test(){
+    //    
+    //    }
+    //
+    //   let funzineAnonima = function(){
+    //        return 'ciao'
+    //    }
+
+    //    funzineAnonima()
+
+        (function(){
+            console.log('funziona')
+        })();
+
+        function prima (a){
+            return function seconda(b){
+                return function terza(c){
+                    return a + b + c ;
+                }
+            }
+        }
+        console.log( prima (2)(5)(7))
+    </script>
+</body>
+</html>

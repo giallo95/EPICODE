@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let b = 1
+
+        function test(){
+            let a = 0
+            console.log(b)
+        }
+
+        test()
+
+        //console.log(a) // a is not defined perchè a nasce in una funzione, e non è disponibile
+        console.log(b) 
+
+            //closure    
+            function closure(){
+                let prova = 1
+                function figlia(){
+                    console.log(prova)//1
+                //le variabili della funzione esterna sono accessibili in questa interna
+                    let provaInterna = 2
+            }
+            
+        }
+
+
+    </script>
+</body>
+</html>
