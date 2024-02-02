@@ -86,3 +86,17 @@ body{
     height: 325px;
     width: 300px;
 }
+
+
+
+.vr{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 75px;
+    height: auto;
+    width: 90%;
+    object-fit: contain;
+}
+
+
+
