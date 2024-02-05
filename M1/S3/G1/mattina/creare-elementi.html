@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="target"></div>
+
+    <script>
+
+        const target = document.querySelector('#target')
+
+        //test.innerHTML = '<ul><li>element</li><li>element</li><li>element</li><li>element</li></ul>'
+
+        let ul = document.createElement('ul');//<ul></ul>
+        
+        let li = document.createElement('li');//<li></li>
+        li.innerText = 'Elemento lista';
+
+        let li2 = document.createElement('li');//<li></li>
+        li2.innerText = 'Elemento lista 2';
+
+        li2.addEventListener('click', function(){
+            li2.style.backgroundColor = 'red'
+        })
+
+
+        ul.append(li,li2)
+
+
+        console.log(ul);
+
+        target.append(ul)
+
+    </script>
+</body>
+</html>

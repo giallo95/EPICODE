@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="test">Prova</div>
+    
+    <div class="blocco">Elemento con la classe blocco</div>
+    <div class="blocco">Elemento con la classe blocco</div>
+    <div class="blocco">Elemento con la classe blocco</div>
+    
+
+    <script>
+
+        //posso selezionare un tag ottenendo un riferrimento all' oggetto dom presente in pagina
+
+        document.getElementById('test').style.border = '2px solid #000'
+        
+        const test = document.getElementById('test');
+
+        //mi devo ricordare che la ricerca potrebbe restiruire null
+        //questo perchè magari non ho scritto bene l' id
+
+        //per la lettura e lascrittura delle proprieta degli oggetti DOM
+        //valgono le regole degli oggetti che gia conosci
+
+        //quindi la lettura si fa cosi
+        console.log(test.innerText);
+
+        //la scrittura si fa cosi
+        test.innerText = 'ciao'
+        test.style.color = 'red'
+
+        const classi = document.getElementsByClassName('blocco')
+
+        console.log(classi);
+
+        classi[1].style.backgroundColor = 'green';
+
+        //l' unico modo per agire su una lista di elementi selezionati per
+        //classe o per tag è ciclare
+        for(let i = 0; i < classi.length; i++){
+            classi[i].style.backgroundColor = 'green';
+            classi[i].innerText = 'Modificato'
+        }
+
+        const tags = document.getElementsByTagName('div')
+        console.log(tags);
+
+        //getElemenetsByTagName e getElementsByClassName non sono esattamente array canonici,
+        //sono delle HTMLCollection quindi non dispondi dei metodi degli array
+
+
+        //Array.from() risolve il problema, convertendo l' htmlcollection in array
+        Array.from(tags).forEach(element => {
+            
+            element.innerText = 'Modificato di nuovo'
+
+        });
+    </script>
+</body>
+</html>

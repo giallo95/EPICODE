@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="test">elemento test </div>
+    <div class="blocco">elemento con la classe blocco</div>
+    <div class="blocco">elemento con la classe blocco</div>
+    <div class="blocco">elemento con la classe blocco</div>
+    <div>escluso dall' elenco</div>
+
+
+    <script>
+        //querySelector seleziona qualunque query di css
+        let test = document.querySelector('#test');
+        let blocco = document.querySelector('.blocco');
+
+        console.log(test, blocco);
+
+        //se la query di css comprende piùndo un elemento di querySelector
+        //restituisce sempre il primo
+
+        //se devo slelezionare una lista di ellementi devo usare querySelectorAll
+
+        let classi = document.querySelectorAll('#test')//un array con l' elemento trovato
+        console.log(classi);
+
+        let tuttiDiv = document.querySelectorAll('#test, .blocco')
+        console.log(tuttiDiv)
+
+        tuttiDiv.forEach(div => {
+            div.style.backgroundColor = 'red'
+        })
+
+
+    </script>
+</body>
+</html>
