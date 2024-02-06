@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //spread operator = ...variabile
+
+        const user = {
+            name: "Lidia",
+            email: "lidia@email.com"
+        }
+
+        const userDetails = {
+            ...user,
+            email: "lidia@email.it",
+            classe: "FS0124B",
+            role: "docente"
+
+        }
+        console.log(userDetails)
+
+        const lettere = ["a","b","c","d","e"];
+        const altreLet = ["f","g","h","i","l"]
+        //const altreLet = [...lettere,"f","g","h","i","l"]
+
+        //console.log(altreLet)
+
+        const completo = [...lettere, ...altreLet]
+        console.log(completo)
+
+        //JREST PARAMETERS
+
+        const sunWithText = function(text, ...numeri){
+          
+            let sun = 0
+            for(let i = 0; i < numeri.length; i++){
+                sun += numeri[i];
+            }
+        }
+
+        sunWithText('pippo', 34, 12, 40, 50, 2)
+
+        //DESTRUCTURING OPERATOR
+         const utente = {
+            nome: 'Lidia',
+            ruolo: 'docente'
+         }
+
+         const {nome, ruolo} = utente
+
+         console.log(nome,ruolo)
+
+        //TEMPLATE LITERALS
+          //backtick
+        const creaStrings = (nome,ruolo,email) => {
+            return `L" utente' ${utente.nome} 'con email' ${utente.email} `
+        }
+
+        console.log(
+            creaStrings({nome: 'Lidia', email: 'lidia@email.com'})
+        )
+         
+        // I METODI DEGLI ARRAY
+        /*
+         - push - aggiunge un elemento alla fine
+         - pop - toglie l' ultimo element
+         - reverse
+         - slice - estrae l' elemento o gli elementi -ha du parametri start (obbligatorio) e un end (opzionale)
+         - splice - modifica un array, rimuovendo, modificando o eliminando un elmento
+         - shift / unshift
+         - join
+         - includes
+         Arrey.metodo()
+        
+        
+        */
+
+        // () => funzione a freccia
+        // () => valore di ritorno
+        // const sun = (a,b) => {return a+b}
+
+        
+                let fiori = [
+        { nome: "rosa", colore: "rosso" },
+        { nome: "tulipano", colore: "vario" },
+        { nome: "girasole", colore: "giallo" },
+        { nome: "margherita", colore: "bianco" },
+        { nome: "orchidea", colore: "vario" }
+        ];
+
+
+        //.forEach
+        fiori.forEach((el) => {
+            console.log('equivalente di fiori[i]', el)
+        })
+
+        //.map
+        const nuovoArray = fiori.map((el) => el.nome)
+        console.log(nuovoArray)
+
+        const tuttoMaiusc = fiori.map ((el) => {
+            return {
+                ...el,
+                nome: el.nome.toUpperCase()
+            }
+        })
+        console.log(tuttoMaiusc)
+        
+        //.filter
+        const filtrato = fiori.filter((el) => el.colore.includes('r'))
+        console.log(filtrato)
+
+        //.reduce - somma
+        const shopping = {
+            email: 'pippo.pippo@pippo.it',
+            carrello: [12,22,124,45]
+        }
+        const tot = shopping.carrello.reduce((temp, curr) => temp + curr, 0);
+        console.log(tot)
+
+        //.indexOf 
+        const nomi = ["paolo","simone0","lucia","riccardo"]
+        console.log(nomi.indexOf('riccardo'))
+
+        //.every determina se tutti gli elementi di un array passano una certa condizione
+        //.some determina se alcuni elementi di un array passano una certa condizione
+        //.find determina il primo elemento di un array che risponde ad una condizione
+        //.findIndex  determina la posizione di un elemento di un array che risponde ad una condizione
+
+        const numeri = [4,8,12,16,20,24,28]
+        const numero = numeri.find(el => el > 10)
+        console.log(numero)
+
+        const numero2 = numeri.findIndex(el => el > 10)
+        console.log(numero2)
+
+
+    </script>
+</body>
+</html>
