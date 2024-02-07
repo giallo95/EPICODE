@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form>
+
+        <input type="text" placeholder="name" id="nome">
+        <input type="email" placeholder="Emali" id="email">
+        <input type="password" placeholder="Password" id="password">
+
+        <button id="invia">Invia</button>
+
+    </form>
+
+    <script>
+
+        const invia = document.getElementById('invia');
+
+        invia.addEventListener('click', function(e){
+            e.preventDefault();//blocco l' invio del form
+            
+            console.log('inviato');
+
+            //validazione
+            
+            //seleziono tutti i campi da controllare
+            let nome = document.querySelector('#nome')
+            let email = document.querySelector('#email')
+            let password = document.querySelector('#password')
+
+            let valid = true;
+
+            //controllo i valori
+            if(!nome.valiue){
+                console.log('campo nome vuoto')
+                nome.style.border = '1px solid red'
+            }
+
+            if(email.value == ''){
+                console.log('campo email vuoto')
+            }
+
+            if(password.valiue == ''){
+                console.log('campo password vuoto')
+            }
+
+            if (valid){
+                //invia il form
+            }
+
+        })
+
+    </script>
+    
+</body>
+</html>

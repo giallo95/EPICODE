@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text">
+
+    <script>
+
+        let input = document.querySelector('input');
+
+        input.addEventListener('keyup', function(event){
+            //evente è un oggetto contenente tutte le info sull' evento, compreso
+            //l' elemento su cui si è scatentanto l' evento
+
+            //qui sotto c'è un esempio di mappatura dei tasti wsad tipica dei videogiochi pc
+            console.log(event)
+            if(event.keyCode == 87){
+                //vai avanti
+            }
+            
+            if(event.keyCode ==83){
+                //vai indietro
+            }
+
+            if(event.keyCode == 65 ){
+                //vai a sinistra
+            }
+
+            if(event.keyCode == 68){
+                //vai a destra
+            }
+
+        })
+
+    </script>
+    
+</body>
+</html>
