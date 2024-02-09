@@ -10,7 +10,7 @@ function numberGenerator (){
         num.classList.add('numTab');
         num.innerText = i;
         tabellone.append(num)
-        
+    
     }
     return tabellone
 
@@ -54,6 +54,8 @@ function bottone(){
     
 }
 bottone()
+
+
 
 
 
