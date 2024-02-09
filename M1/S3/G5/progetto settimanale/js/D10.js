@@ -462,9 +462,7 @@ console.log(searchByTitle('The'))
    come parametro e ritorna l'array "movies" fornito privo dell'elemento nella posizione ricevuta come parametro.
 */
 
-function removeIndex(){
-  movies.splice()
-}
+
 
 // DOM (nota: gli elementi che selezionerai non si trovano realmente nella pagina)
 
