@@ -1,0 +1,49 @@
+@media screen and (min-width: 320px){
+    .postlogo{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        }
+
+    h1{
+        font-size: 3rem;
+    }
+
+    fieldset{ 
+        display: flex;
+    }
+    
+}
+
+@media screen and (min-width: 576px) {
+
+    h1{
+        font-size: 4rem;
+    }
+    .tab{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    input{
+        width: 75%;
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+  header{ 
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: none;
+  }
+  .logo{ 
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+  }
+}
