@@ -1,0 +1,30 @@
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+   
+    margin: 20px;
+    background-color: #fef7e2;
+    max-width: 225px;
+    height: 300px;
+    border-radius: 20%;
+    overflow: hidden;
+}
+
+.imgbox{
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+    
+    
+}
+
+.subtxt{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+} 
+
+
+

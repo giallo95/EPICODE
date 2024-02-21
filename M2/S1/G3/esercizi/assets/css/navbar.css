@@ -1,0 +1,18 @@
+nav{
+    background-color: #fef7e2;
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .a3{
+    display: flex;
+    align-items: center;
+    
+}
+
+nav .a3 img{
+    max-width: 30px;
+    margin-right: 10px;
+}
