@@ -32,17 +32,17 @@
     top: 0;
     left: 0;
     opacity: 0;
-    animation: entra 1s , esce 6s ;
+    animation: entra 1s , esce 4s ;
 }
 
 @keyframes entra {
-    0% { opacity: 0; transform: translateY(100%); }
-    100% { opacity: 1; transform: translateY(0); }
+    0% { opacity: 0; ;}
+    100% { opacity: 1;}
 }
 
 @keyframes esce {
-    0% { opacity: 1; }
-    100% { opacity: 0; }
+    0% { opacity: 1;}
+    100% { opacity: 0;transform: translateY(100%) }
 }
 
 .parole i:nth-child(1) { animation-delay: 0s; }
