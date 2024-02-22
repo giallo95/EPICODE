@@ -22,11 +22,12 @@
 .parole {
     color: gray;
     position: relative;
-    height: 1.2em; 
+    height: 1.5em; 
 
 }
 
 .parole i {
+    white-space: nowrap;
     margin-left: 5px;
     position: absolute;
     top: 0;
@@ -36,7 +37,7 @@
 }
 
 @keyframes entra {
-    0% { opacity: 0; ;}
+    0% { opacity: 0;}
     100% { opacity: 1;}
 }
 
