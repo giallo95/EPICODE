@@ -3,9 +3,27 @@ $dark: #141414;
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
 .logo{
-    width: 100px;
+    width: 80px;
+}
+
+.logo2{
+    width: 120px;
 }
 
 .link-top{
     font-size: 12px;
+}
+
+.img-p{
+    width:32px
+}
+
+.iFooter{
+    width: 200px;
+}
+
+//pagina profilo
+
+.profiloimg{
+    width: 150px;
 }

@@ -11845,11 +11845,27 @@ textarea.form-control-lg {
   }
 }
 .logo {
-  width: 100px;
+  width: 80px;
+}
+
+.logo2 {
+  width: 120px;
 }
 
 .link-top {
   font-size: 12px;
+}
+
+.img-p {
+  width: 32px;
+}
+
+.iFooter {
+  width: 200px;
+}
+
+.profiloimg {
+  width: 150px;
 }
 
 /*# sourceMappingURL=style.css.map */
