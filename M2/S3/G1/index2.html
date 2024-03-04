@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            
+        }
+        form input,button{
+            width: 300px;
+        }
+        button{
+            margin-top: 10px;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form Pet</h1>
+    <form>
+        <label for="namePet">Name Pet</label>
+        <input class="namePet" type="text">
+
+        <label for="nameOwner">Name Owner</label>
+        <input class="nameOwner" type="text">
+
+        <label for="species">Spacie</label>
+        <input class="species" type="text">
+
+        <label for="breed">Breed</label>
+        <input class="breed" type="text">
+
+        <button type="submit">INVIA</button>
+
+    </form>
+
+    <h2>Pet list</h2>
+
+    <script>
+
+        
+        class Pet{
+            
+            constructor(_petName, _ownerName, _species, _breed){
+                
+                this.petName = _petName;
+                this.ownerName =  _ownerName;
+                this.species =  _species;
+                this.breed = _breed
+                
+            }
+
+            metodo(){
+                if(this.ownerName == pet2.ownerName){
+                    return true
+                }
+            }
+            
+        } 
+        
+        document.getElementsByTagName("form").addEventListener("submit", function(event) {
+            
+            let petN = document.getElementsByClassName('namePet').value
+            let petO = document.getElementsByClassName('nameOwner').value
+            let species = document.getElementsByClassName('species').value
+            let breed = document.getElementsByClassName('breed').value
+            
+            let pet = new Pet( petN, petO, species, breed)
+
+
+        });
+            </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        class User{
+            constructor(_firstName,_lastname,_age,_location) {
+            this.firstName = _firstName,
+            this.lastName = _lastname
+            this.age = _age
+            this.location = _location
+            }
+
+            metodo(user2){
+            if (this.age > user2.age) {
+            return `${this.firstName} è più vecchio di ${user2.firstName}`;
+        } else if (this.age < user2.age) {
+            return `${this.firstName} è più giovane di ${user2.firstName}`;
+        } else {
+            return `${this.firstName} ha la stessa età di ${user2.firstName}`;
+        }
+    }
+        }
+
+        let utente1 = new User('Riccardo', 'Giallo', 29, 'Anzio');
+        let utente2 = new User('Mario', 'Rossi', 35, 'Roma') 
+
+        console.log(utente1.metodo(utente2))
+
+    </script>
+</body>
+</html>
