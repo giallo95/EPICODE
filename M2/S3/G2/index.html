@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registrazione</h1>
+    <div>
+        <p>Valore salvato: <span class="saved-name"></span></p>
+        <input type="text" class="name-input" placeholder="Inserisci il tuo nome">
+        <button class="save-btn">Salva</button>
+        <button class="clear-btn">Rimuovi</button>
+    </div>
+
+    <script>
+
+        function saveName() {
+            let name = document.querySelector('.name-input').value;
+            localStorage.setItem('savedName', name);
+            document.querySelector('.saved-name').textContent = name;
+        }
+
+
+        function clearName() {
+            localStorage.removeItem('savedName');
+            document.querySelector('.saved-name').textContent = '';
+            document.querySelector('.name-input').value = '';
+        }
+
+
+        window.onload = function() {
+            let savedName = localStorage.getItem('savedName');
+            if (savedName) {
+                document.querySelector('.saved-name').textContent = savedName;
+                document.querySelector('.name-input').value = savedName;
+            }
+        };
+
+        document.querySelector('.save-btn').addEventListener('click', saveName);
+        document.querySelector('.clear-btn').addEventListener('click', clearName);
+    </script>
+</body>
+</html>
