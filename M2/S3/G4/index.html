@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .immagini{
+            margin: 20px;
+            border-radius: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Immagini da Pexels</h1>
+    <button id="loadImagesBtn">Load Images</button>
+    <div id="imageContainer"></div>
+
+    <script>
+        document.getElementById('loadImagesBtn').addEventListener('click', async function() {
+            const query = 'dog';
+            const apiKey = 'lYLzEnzj9Ol62vifvF7XDwFZ8931KsxwtfA1SWmELLKcvSZwFN96RfyR';
+            const apiUrl = `https://api.pexels.com/v1/search?query=${query}`;
+
+            const response = await fetch(apiUrl, {
+                headers: {
+                    Authorization: apiKey
+                }
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                displayImages(data.photos);
+            }
+        });
+
+        function displayImages(photos) {
+            const imageContainer = document.getElementById('imageContainer');
+            imageContainer.innerHTML = '';
+            photos.forEach(photo => {
+                const img = document.createElement('img');
+                img.classList.add('immagini')
+                img.src = photo.src.medium;
+                imageContainer.appendChild(img);
+            });
+        }
+    </script>
+
+</body>
+</html>
