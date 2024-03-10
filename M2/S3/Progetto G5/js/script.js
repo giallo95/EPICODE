@@ -16,18 +16,43 @@ async function chiamata(){
         headers: {
             Authorization: accessToken
         }
-    }).then(dati => dati.json())
-}
+    })
+    .then(dati => dati.json())}
 
-chiamata('product').then(product => {
+        chiamata('products').then(products => {
 
-  console.log(product);
+    products.forEach(product => {
+                
+        let card = generaClone()
+
+        let name = card.querySelector('.name')
+        name.innerText = product.name
+
+        let price = card.querySelector('.price')
+        price.innerText = product.price
+
+        let image = card.querySelector('.image')
+        image.src = product.image
+        
+        
+        let bottone = card.querySelector('.details')
+        bottone.addEventListener('click',()=>{
+           const productId = product._id;
+           window.location.href = `details.html?productId=${productId}`;
+        })
+
+        
+        document.querySelector('#container').appendChild(card)
+        console.log(product);
+    });
+
+
 })
 
 
 function generaClone(){
     
-    let template = document.querySelector('#template-card')
+    let template = document.querySelector('#templateCard')
     let clone = template.content.cloneNode(true)
 
     return clone;

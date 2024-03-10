@@ -24,13 +24,15 @@ addP.addEventListener('click', function(e) {
     fetch(apiUrl, {
         method: 'POST',
         headers: {
-            "Authorization": accessToken
+            "Authorization": accessToken,
+            "Content-Type": "application/json"
         },
         body: JSON.stringify(product)
     })
     .then(res => res.json())
-    .then(res => { 
-        //location.href = 'index.html';
+    .then((res) => {
+        //console.log(product) 
+        location.href = 'index.html';
     });
 });
 
