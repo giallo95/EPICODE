@@ -1,0 +1,37 @@
+<header class="mb-5">
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <div class="col-11 gap-3 d-flex">
+        <a class="nav-link active" aria-current="page" href="#">Active</a>
+        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Link</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <div class="container">
+    <h3>POST IN EVIDENZA</h3>
+    <div>
+      <div class="row" *ngFor="let post of postArr">
+        <div class="col-6">
+          <h5>{{ post.title }}</h5>
+          <p>{{ post.body }}</p>
+          <a href="#">{{ post.tags }}</a>
+        </div>
+        <div class="col-6">
+          <h5>{{ post.title }}</h5>
+          <p>{{ post.body }}</p>
+          <a href="#">{{ post.tags }}</a>
+        </div>
+      </div>
+    </div>
+
+    <h4>POTREBBERO PIACERTI QUESTI POST</h4>
+    <div>
+
+    </div>
+  </div>
+</main>
