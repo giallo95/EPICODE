@@ -15,23 +15,42 @@
   <div class="container">
     <h3>POST IN EVIDENZA</h3>
     <div>
-      <div class="row" *ngFor="let post of postArr">
+      <div class="row" >
         <div class="col-6">
-          <h5>{{ post.title }}</h5>
-          <p>{{ post.body }}</p>
-          <a href="#">{{ post.tags }}</a>
+          <h5>{{ postArr[0].title }}</h5>
+          <p>{{ postArr[0].body }}</p>
+          <a href="#">{{ postArr[0].tags }}</a>
         </div>
         <div class="col-6">
-          <h5>{{ post.title }}</h5>
-          <p>{{ post.body }}</p>
-          <a href="#">{{ post.tags }}</a>
+          <h5>{{ postArr[1].title }}</h5>
+          <p>{{ postArr[1].body }}</p>
+          <a href="#">{{ postArr[1].tags }}</a>
         </div>
       </div>
     </div>
 
     <h4>POTREBBERO PIACERTI QUESTI POST</h4>
-    <div>
-
+    <div class="row my-3">
+      <div class="col-3">
+        <h5>{{ postArr[3].title }}</h5>
+        <p>{{ postArr[3].body }}</p>
+        <a href="#">{{ postArr[3].tags }}</a>
+      </div>
+      <div class="col-3">
+        <h5>{{ postArr[4].title }}</h5>
+        <p>{{ postArr[4].body }}</p>
+        <a href="#">{{ postArr[4].tags }}</a>
+      </div>
+      <div class="col-3">
+        <h5>{{ postArr[5].title }}</h5>
+        <p>{{ postArr[5].body }}</p>
+        <a href="#">{{ postArr[5].tags }}</a>
+      </div>
+      <div class="col-3">
+        <h5>{{ postArr[6].title }}</h5>
+        <p>{{ postArr[6].body }}</p>
+        <a href="#">{{ postArr[6].tags }}</a>
+      </div>
     </div>
   </div>
 </main>
