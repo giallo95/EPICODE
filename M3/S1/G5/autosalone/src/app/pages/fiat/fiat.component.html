@@ -1,0 +1,12 @@
+<div class="row justify-content-evenly my-4">
+  <div *ngFor="let autovettura of autovettureFiat" class="card" style="width: 18rem;"
+    [ngClass]="{'card-available': autovettura.available, 'card-not-available': !autovettura.available}">
+    <img [src]="autovettura.modelImage" class="card-img-top img" [alt]="autovettura.brand + ' ' + autovettura.model">
+    <div class="card-body">
+      <h5 class="card-title">{{ autovettura.brand }} {{ autovettura.model }}</h5>
+      <p class="card-text">Anno: {{ autovettura.year }}</p>
+      <p class="card-text">Prezzo: {{ autovettura.price }}</p>
+      <a href="#" class="btn btn-primary">Dettagli</a>
+    </div>
+  </div>
+</div>
