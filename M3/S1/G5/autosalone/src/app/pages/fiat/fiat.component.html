@@ -1,3 +1,7 @@
+<div class="d-flex justify-content-center mt-5">
+  <img class="logo-fiat" src="../assets/logo/loghi/fiat logo.png" alt="">
+</div>
+
 <div class="row justify-content-evenly my-4">
   <div *ngFor="let autovettura of autovettureFiat" class="card" style="width: 18rem;"
     [ngClass]="{'card-available': autovettura.available, 'card-not-available': !autovettura.available}">

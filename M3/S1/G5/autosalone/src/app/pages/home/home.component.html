@@ -1,3 +1,16 @@
+<div class="border-bottom border-dark p-4">
+  <h3 class="text-center p-2">
+    I norsti marchi
+  </h3>
+  <div class="d-flex justify-content-evenly align-items-center">
+    <a routerLink="/ford"><img class="logo-ford" src="../assets/logo/loghi/ford.png" alt=""></a>
+    <a routerLink="/fiat"><img class="logo-fiat" src="../assets/logo/loghi/fiat logo.png" alt=""></a>
+    <a routerLink="/audi"><img class="logo-audi" src="../assets/logo/loghi/audi.png" alt=""></a>
+  </div>
+</div>
+
+<h3 class="text-center mt-4">Auto in Evidenza</h3>
+
 <div class="row justify-content-evenly my-4">
   <div *ngFor="let autovettura of randomAutovetture"
        class="card"
