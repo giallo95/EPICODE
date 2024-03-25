@@ -14,7 +14,9 @@ export class HomeComponent {
   constructor (private postSvc:PostService){}
 
   ngOnInit(){
-    this.postArr = this.postSvc.getAllPost()
+    this.postSvc.getAllPost().then(res => {
+      this.postArr = res;
+    })
   }
 
 

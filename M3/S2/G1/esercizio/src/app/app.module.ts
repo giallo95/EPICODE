@@ -7,7 +7,6 @@ import { ActivePostComponent } from './pages/active-post/active-post.component';
 import { InactivePostComponent } from './pages/inactive-post/inactive-post.component';
 import { Pagina404Component } from './pagina404/pagina404.component';
 import { HomeComponent } from './pages/home/home.component';
-import { FormComponent } from './Forms/form/form.component';
 
 @NgModule({
   declarations: [
@@ -15,8 +14,7 @@ import { FormComponent } from './Forms/form/form.component';
     ActivePostComponent,
     InactivePostComponent,
     Pagina404Component,
-    HomeComponent,
-    FormComponent
+    HomeComponent
   ],
   imports: [
     BrowserModule,
