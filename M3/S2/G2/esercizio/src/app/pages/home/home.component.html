@@ -1,0 +1,7 @@
+<div class="row my-3 gap-3">
+  <div *ngFor="let post of postArr" class="col-3 card ">
+    <h5>{{ post.title }}</h5>
+    <p>{{ post.body }}</p>
+    <a class="border rounded-pill text-center link-dark link-underline-opacity-0"
+     href="#" *ngFor="let tag of post.tags" appRandomBackgroundColor>{{ post.tags.join(', ') | uppercase}}</a>
+  </div>

@@ -1,0 +1,6 @@
+<div class="row my-3">
+  <div *ngFor="let post of postArr" class="col-3">
+    <h5>{{ post.title }}</h5>
+    <p>{{ post.body }}</p>
+    <a href="#">{{ post.tags.join(', ') | uppercase }}</a>
+  </div>
