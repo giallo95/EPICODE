@@ -1,0 +1,13 @@
+<h1>Cose</h1>
+
+<div  *ngFor="let product of products" class="card" style="width: 18rem;">
+  <div  class="card-body">
+    <h5 class="card-title">{{ product.title }}</h5>
+    <p class="card-text">{{ product.description }}</p>
+    <h6 class="card-subtitle mb-2 text-body-secondary">Prezzo: {{ product.price }}</h6>
+    <div class="d-flex text-center">
+      <a href="#" class="card-link border p-1 text-decoration-none   rounded-pill">Aggiungi ai preferiti</a>
+      <a href="#" class="card-link border p-1 text-decoration-none   rounded-pill">Aggiungi al carrello</a>
+    </div>
+  </div>
+</div>
