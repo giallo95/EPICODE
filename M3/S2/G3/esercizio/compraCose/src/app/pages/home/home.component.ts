@@ -14,16 +14,12 @@ export class HomeComponent implements OnInit {
   constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
-    this.productService.getProducts()
-      .subscribe(
-        (response) => {
-          this.products = Object.values(response);
-          console.log('Dati ricevuti:', this.products);
-        },
-        (error) => {
-          console.error('Errore nella richiesta GET:', error);
-        }
-      );
+    this.productService.getProducts().subscribe(products => {
+      console.log(products)
+      this.products = products
+    }
+    )
+
   }
 
 }
