@@ -30,9 +30,4 @@ export class PhotoService {
   }
 
 
-  private updatePhotosSubject(): void {
-    this.getPhotos().subscribe(photos => {
-      this.photosSubject.next(photos);
-    });
-  }
 }
