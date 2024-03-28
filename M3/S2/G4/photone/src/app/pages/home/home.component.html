@@ -1,0 +1,14 @@
+<h3>Contatore mi piace: {{ totalLikes }}</h3>
+<div class="row justify-content-evenly">
+
+  <div class="card my-3" style="width: 18rem;" *ngFor="let photo of photos">
+    <img [src]="photo.thumbnailUrl" class="card-img-top" alt="{{ photo.title }}">
+    <div class="card-body">
+      <h5 class="card-title">{{ photo.title }}</h5>
+    <div class="row gap-4 justify-content-center">
+      <a href="#" class="col-5 btn btn-success" (click)="likePhoto(photo)">Mi piace</a>
+      <a href="#" class="col-5 btn btn-danger" (click)="deletePhoto(photo.id)">Elimina</a>
+    </div>
+  </div>
+</div>
+</div>
