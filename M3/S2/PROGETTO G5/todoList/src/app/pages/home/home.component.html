@@ -1,0 +1,18 @@
+<h2>ALL</h2>
+
+<div class="tab-content my-2" id="ex1-content">
+  <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel"
+    aria-labelledby="ex1-tab-1">
+    <ul class="list-group mb-0">
+      <li class="list-group-item d-flex border-0 mb-2 rounded"
+      *ngFor="let todo of todos"
+      [ngStyle]="{ 'background-color': todo.completed ? '#6AC259' : '#FF6B6B' }">
+        <input class="form-check-input me-2" type="checkbox" value="" aria-label="..."
+        [checked]="todo.completed"
+          (change)="toggleTodoStatus(todo)" />
+        <div class="">
+          <p class="mb-1 fw-semibold">{{ todo.todo }}</p>
+          <p class="mb-0">{{ getUserName(todo.userId) }}</p>
+        </div>
+      </li>
+    </ul>
