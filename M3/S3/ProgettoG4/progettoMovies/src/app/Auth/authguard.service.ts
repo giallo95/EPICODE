@@ -38,7 +38,7 @@ export class AuthguardService {
 
     }
 
-    private registerUrl = 'http://localhost:4200/register';
+    private registerUrl = 'http://localhost:3000/register';
     private loginUrl = 'http://localhost:3000/login';
 
 
