@@ -2,26 +2,26 @@
   <div class="row justify-content-center">
     <div class="col-md-6">
       <h2>Register</h2>
-      <form (ngSubmit)="register()">
+      <form (ngSubmit)="register()" method="post">
         <div class="form-group">
           <label for="firstName">Nome</label>
-          <input type="text" class="form-control" id="firstName" name="firstName" required [(ngModel)]="formData.firstName">
+          <input type="text" class="form-control" id="firstName" required [(ngModel)]="registerData.firstname" name="firstName">
         </div>
         <div class="form-group">
           <label for="lastName">Cognome</label>
-          <input type="text" class="form-control" id="lastName" name="lastName" required [(ngModel)]="formData.lastName">
+          <input type="text" class="form-control" id="lastName" required [(ngModel)]="registerData.lastname" name="lastName">
         </div>
         <div class="form-group">
           <label for="username">Username</label>
-          <input type="text" class="form-control" id="username" name="username" required [(ngModel)]="formData.username">
+          <input type="text" class="form-control" id="username" required [(ngModel)]="registerData.username" name="username">
         </div>
         <div class="form-group">
           <label for="email">Email</label>
-          <input type="email" class="form-control" id="email" name="email" required [(ngModel)]="formData.email">
+          <input type="email" class="form-control" id="email" required [(ngModel)]="registerData.email" name="email">
         </div>
         <div class="form-group">
           <label for="password">Password</label>
-          <input type="password" class="form-control" id="password" name="password" required [(ngModel)]="formData.password">
+          <input type="password" class="form-control" id="password" required [(ngModel)]="registerData.password" name="password">
         </div>
         <button type="submit" class="btn btn-primary mt-2">Register</button>
       </form>

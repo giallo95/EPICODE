@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { AuthguardService } from '../../Auth/authguard.service';
+import { Users } from '../../Models/users';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -7,26 +9,20 @@ import { AuthguardService } from '../../Auth/authguard.service';
   styleUrl: './register.component.scss'
 })
 export class RegisterComponent {
-  formData = {
-    firstName: '',
-    lastName: '',
-    username: '',
-    email: '',
-    password: ''
-  };
 
-  constructor(private authService: AuthguardService) {}
 
-  register() {
-    this.authService.register(this.formData).subscribe(
-      (response) => {
-        console.log('Registrazione avvenuta con successo', response);
-        // Puoi gestire la risposta dal backend o reindirizzare l'utente
-      },
-      (error) => {
-        console.error('Errore durante la registrazione', error);
-        // Gestisci l'errore in base alle tue esigenze
-      }
-    );
-  }
-}
+  registerData:Partial<Users> = {}
+
+  constructor(
+    private authSvc:AuthguardService,
+    private router:Router
+    ){}
+
+  register(){
+    this.authSvc.register(this.registerData)
+    .subscribe(data=> {
+
+      this.router.navigate([''])
+
+    })
+  }}
