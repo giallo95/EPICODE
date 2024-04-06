@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes, CanActivateChildFn } from '@angular/router';
 import { RegisterComponent } from './register.component';
+import { authguardGuard } from '../../Auth/authguard.guard';
 
-const routes: Routes = [{ path: '', component: RegisterComponent }];
+const routes: Routes = [{ path: '', component: RegisterComponent, canActivate:[authguardGuard] }];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
