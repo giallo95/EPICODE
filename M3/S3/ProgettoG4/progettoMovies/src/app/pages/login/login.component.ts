@@ -11,8 +11,8 @@ import { Router } from '@angular/router';
 export class LoginComponent {
 
     loginData:LoginData = {
-    username:'string',
-    password:'string'
+    email:'',
+    password:''
   }
 
   constructor(
@@ -23,8 +23,8 @@ export class LoginComponent {
     login(){
 
       this.authSvc.login(this.loginData)
-      .subscribe(data => {
-        this.router.navigate([''])
+      .subscribe(() => {
+        this.router.navigate(['/'])
       })
 
     }

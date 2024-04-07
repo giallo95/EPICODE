@@ -379,6 +379,44 @@
       "id": "5273",
       "username": "cane ",
       "password": "rosso"
+    },
+    {
+      "id": "5a57",
+      "username": "cane ",
+      "password": "rosso"
+    },
+    {
+      "id": "2c70",
+      "username": "cane ",
+      "password": "rosso"
+    },
+    {
+      "id": "f280",
+      "username": "cane ",
+      "password": "rosso"
+    },
+    {
+      "id": "01fc",
+      "username": "cane ",
+      "password": "rosso"
+    },
+    {
+      "id": "abea",
+      "email": "pippo@outlook.it",
+      "password": "rosso"
+    },
+    {
+      "id": "2a12",
+      "email": "pippo@outlook.it",
+      "password": "rosso"
+    },
+    {
+      "email": "sasso20@sassari.it",
+      "password": "$2a$10$uEy8C.pIIBvG6nk/xGZt.OX5ZU7IksvEHAlaVzyhaqdX/AvaxFOcW",
+      "username": "sasso20",
+      "firstname": "sasso",
+      "lastname": "venti",
+      "id": "ZMTWG0Z"
     }
   ],
   "movies": [

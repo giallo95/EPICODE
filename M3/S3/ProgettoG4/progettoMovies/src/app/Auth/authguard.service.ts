@@ -38,8 +38,8 @@ export class AuthguardService {
 
     }
 
-    private registerUrl = 'http://localhost:3000/users';
-    private loginUrl = 'http://localhost:3000/users';
+    private registerUrl = 'http://localhost:3000/register';
+    private loginUrl = 'http://localhost:3000/login';
 
     getAccessToken():string{
       const userJson = localStorage.getItem('accessData')
@@ -63,7 +63,7 @@ export class AuthguardService {
 
       this.authSubject.next(data.user)
       localStorage.setItem('accessData', JSON.stringify(data))
-      //this.autoLogout(data.accessToken)
+      this.autoLogout(data.accessToken)
 
     }))
   }
@@ -80,7 +80,7 @@ export class AuthguardService {
 
   }
 
-  /*autoLogout(jwt:string){
+  autoLogout(jwt:string){
     const expDate = this.jwtHelper.getTokenExpirationDate(jwt) as Date;
     console.log(jwt)
     const expMs = expDate.getTime() - new Date().getTime();
@@ -89,7 +89,7 @@ export class AuthguardService {
     setTimeout(()=>{
       this.logout()
     },expMs)
-  }*/
+  }
 
   restoreUser(){
 
@@ -101,7 +101,20 @@ export class AuthguardService {
 
 
     this.authSubject.next(accessData.user)
-    //this.autoLogout(accessData.accessToken)
+    this.autoLogout(accessData.accessToken)
 
   }
+
+  private filmsUrl='http://localhost:3000/movies'
+
+  getFilms(): Observable<any[]> {
+    return this.http.get<any[]>(this.filmsUrl);
+  }
+
+  getUserData(): any {
+    const userDataString = localStorage.getItem('userData');
+    return userDataString ? JSON.parse(userDataString) : null;
+  }
+
+
 }

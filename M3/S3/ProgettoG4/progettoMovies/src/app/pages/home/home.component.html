@@ -1,10 +1,23 @@
 
-<div class="container-fluid d-flex justify-content-center ">
-  <div class="text-center">
+<div class="container-fluid d-flex justify-content-center"*ngIf="!isUserLoggedIn">
+  <div class="text-center" >
     <h2 class="mb-5">Wellcome in Movies</h2>
     <div class="row justify-content-evenly">
       <button type="button" class="col-5 btn btn-primary mr-2" routerLink="/login">Login</button>
       <button type="button" class="col-5 btn btn-success" routerLink="/register">Registrati</button>
     </div>
   </div>
+</div>
+
+<div class="row gap-2 justify-content-evenly">
+
+  <div class="carte col-md-3 col-sm-4 col-6 card mt-2 "  *ngFor="let movies of films">
+    <div class="card-body">
+      <h5 class="card-title">{{ movies.film }}</h5>
+      <h6 class="card-subtitle mb-2 text-body-secondary">Regista: {{ movies.regista}}</h6>
+      <button class="btn btn-info">Aggiungi a preferiti</button>
+
+    </div>
+  </div>
+
 </div>

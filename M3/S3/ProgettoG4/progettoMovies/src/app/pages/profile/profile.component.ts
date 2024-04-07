@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthguardService } from '../../Auth/authguard.service';
 
 @Component({
   selector: 'app-profile',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './profile.component.scss'
 })
 export class ProfileComponent {
+  userData: any;
 
+  constructor(private authSvc: AuthguardService) { }
+
+  ngOnInit(): void {
+    this.userData = this.authSvc.getUserData();
+  }
 }

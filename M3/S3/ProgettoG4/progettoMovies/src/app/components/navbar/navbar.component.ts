@@ -22,4 +22,13 @@ export class NavbarComponent {
     })
 
   }
+  logout(){
+    this.authSvc.logout()
+  }
+
+  isNavbarCollapsed = true;
+
+  toggleNavbarCollapse() {
+    this.isNavbarCollapsed = !this.isNavbarCollapsed;
+  }
 }
