@@ -5,24 +5,23 @@ import { AuthguardService } from './authguard.service';
 @Injectable({
   providedIn: 'root'
 })
-export class AuthguardGuard {
-
+export class GuestGuard implements CanActivate, CanActivateChild {
   constructor(
     private authSvc:AuthguardService,
     private router:Router//per i redirect
     ){}
 
-
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): MaybeAsync<GuardResult> {
 
-    if(!this.authSvc.syncIsLoggedIn){
-      this.router.navigate(['/login'])
+    if(this.authSvc.syncIsLoggedIn){
+      this.router.navigate(['/profile'])
     }
 
-    return this.authSvc.syncIsLoggedIn
+    return !this.authSvc.syncIsLoggedIn
   }
+
 
   canActivateChild(
     childRoute: ActivatedRouteSnapshot,

@@ -38,9 +38,18 @@ export class AuthguardService {
 
     }
 
-    private registerUrl = 'http://localhost:3000/register';
-    private loginUrl = 'http://localhost:3000/login';
+    private registerUrl = 'http://localhost:3000/users';
+    private loginUrl = 'http://localhost:3000/users';
 
+    getAccessToken():string{
+      const userJson = localStorage.getItem('accessData')
+      if(!userJson) return '';
+
+      const accessData:AccessData = JSON.parse(userJson)
+      if(this.jwtHelper.isTokenExpired(accessData.accessToken)) return '';
+
+      return accessData.accessToken
+    }
 
 
     register(newUser: Partial<Users>): Observable<AccessData> {
@@ -54,30 +63,33 @@ export class AuthguardService {
 
       this.authSubject.next(data.user)
       localStorage.setItem('accessData', JSON.stringify(data))
-
-      this.autoLogout(data.accessToken)
+      //this.autoLogout(data.accessToken)
 
     }))
   }
-  autoLogout(jwt:string){
-    const expDate = this.jwtHelper.getTokenExpirationDate(jwt) as Date;
-    const expMs = expDate.getTime() - new Date().getTime();
 
 
-    setTimeout(()=>{
-      this.logout()
-    },expMs)
-  }
+
 
   logout(){
 
     this.authSubject.next(null)
     localStorage.removeItem('accessData')
 
-    this.router.navigate(['/pages/login'])
+    this.router.navigate(['login'])
 
   }
 
+  /*autoLogout(jwt:string){
+    const expDate = this.jwtHelper.getTokenExpirationDate(jwt) as Date;
+    console.log(jwt)
+    const expMs = expDate.getTime() - new Date().getTime();
+
+
+    setTimeout(()=>{
+      this.logout()
+    },expMs)
+  }*/
 
   restoreUser(){
 
@@ -89,7 +101,7 @@ export class AuthguardService {
 
 
     this.authSubject.next(accessData.user)
-    this.autoLogout(accessData.accessToken)
+    //this.autoLogout(accessData.accessToken)
 
   }
 }

@@ -8,7 +8,8 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link active" aria-current="page"  routerLink="/">Home</a>
-        <a class="nav-link active" routerLink="profile">Profile</a>
+        <a class="nav-link active" routerLink="profile" *ngIf="!isUserLoggedIn">Profile </a>
+
 
       </div>
     </div>

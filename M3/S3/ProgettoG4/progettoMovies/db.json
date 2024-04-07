@@ -1,232 +1,537 @@
 {
-  "users":[
+  "users": [
     {
       "firstName": "John",
       "lastName": "Doe",
       "username": "john_doe",
       "email": "john.doe@example.com",
-      "favoriteMovies": ["The Shawshank Redemption", "Pulp Fiction", "The Dark Knight"]
+      "favoriteMovies": [
+        "The Shawshank Redemption",
+        "Pulp Fiction",
+        "The Dark Knight"
+      ],
+      "id": "2558"
     },
     {
       "firstName": "Jane",
       "lastName": "Smith",
       "username": "jane_smith",
       "email": "jane.smith@example.com",
-      "favoriteMovies": ["The Godfather", "Inception", "The Lord of the Rings: The Return of the King"]
+      "favoriteMovies": [
+        "The Godfather",
+        "Inception",
+        "The Lord of the Rings: The Return of the King"
+      ],
+      "id": "30d9"
     },
     {
       "firstName": "Alice",
       "lastName": "Johnson",
       "username": "alice_johnson",
       "email": "alice.johnson@example.com",
-      "favoriteMovies": ["The Shawshank Redemption", "Forrest Gump", "Fight Club"]
+      "favoriteMovies": [
+        "The Shawshank Redemption",
+        "Forrest Gump",
+        "Fight Club"
+      ],
+      "id": "7e2c"
     },
     {
       "firstName": "Bob",
       "lastName": "Brown",
       "username": "bob_brown",
       "email": "bob.brown@example.com",
-      "favoriteMovies": ["The Matrix", "The Lord of the Rings: The Fellowship of the Ring", "The Usual Suspects"]
+      "favoriteMovies": [
+        "The Matrix",
+        "The Lord of the Rings: The Fellowship of the Ring",
+        "The Usual Suspects"
+      ],
+      "id": "b77a"
     },
     {
       "firstName": "Emily",
       "lastName": "Wilson",
       "username": "emily_wilson",
       "email": "emily.wilson@example.com",
-      "favoriteMovies": ["Schindler's List", "The Departed", "The Intouchables"]
+      "favoriteMovies": [
+        "Schindler's List",
+        "The Departed",
+        "The Intouchables"
+      ],
+      "id": "028f"
     },
     {
       "firstName": "Michael",
       "lastName": "Garcia",
       "username": "michael_garcia",
       "email": "michael.garcia@example.com",
-      "favoriteMovies": ["The Dark Knight", "The Godfather", "Forrest Gump"]
+      "favoriteMovies": [
+        "The Dark Knight",
+        "The Godfather",
+        "Forrest Gump"
+      ],
+      "id": "483f"
     },
     {
       "firstName": "Sophia",
       "lastName": "Martinez",
       "username": "sophia_martinez",
       "email": "sophia.martinez@example.com",
-      "favoriteMovies": ["The Shawshank Redemption", "Pulp Fiction", "The Lord of the Rings: The Two Towers"]
+      "favoriteMovies": [
+        "The Shawshank Redemption",
+        "Pulp Fiction",
+        "The Lord of the Rings: The Two Towers"
+      ],
+      "id": "39dd"
     },
     {
       "firstName": "William",
       "lastName": "Anderson",
       "username": "william_anderson",
       "email": "william.anderson@example.com",
-      "favoriteMovies": ["The Matrix", "The Godfather", "The Lord of the Rings: The Fellowship of the Ring"]
+      "favoriteMovies": [
+        "The Matrix",
+        "The Godfather",
+        "The Lord of the Rings: The Fellowship of the Ring"
+      ],
+      "id": "4998"
     },
     {
       "firstName": "Olivia",
       "lastName": "Taylor",
       "username": "olivia_taylor",
       "email": "olivia.taylor@example.com",
-      "favoriteMovies": ["Pulp Fiction", "The Dark Knight", "Inception"]
+      "favoriteMovies": [
+        "Pulp Fiction",
+        "The Dark Knight",
+        "Inception"
+      ],
+      "id": "6c8e"
     },
     {
       "firstName": "Daniel",
       "lastName": "Hernandez",
       "username": "daniel_hernandez",
       "email": "daniel.hernandez@example.com",
-      "favoriteMovies": ["The Shawshank Redemption", "The Godfather", "Fight Club"]
+      "favoriteMovies": [
+        "The Shawshank Redemption",
+        "The Godfather",
+        "Fight Club"
+      ],
+      "id": "fc39"
     },
     {
       "firstName": "Isabella",
       "lastName": "Lopez",
       "username": "isabella_lopez",
       "email": "isabella.lopez@example.com",
-      "favoriteMovies": ["Forrest Gump", "The Lord of the Rings: The Return of the King", "The Departed"]
+      "favoriteMovies": [
+        "Forrest Gump",
+        "The Lord of the Rings: The Return of the King",
+        "The Departed"
+      ],
+      "id": "7814"
     },
     {
       "firstName": "Ethan",
       "lastName": "Gonzalez",
       "username": "ethan_gonzalez",
       "email": "ethan.gonzalez@example.com",
-      "favoriteMovies": ["The Shawshank Redemption", "Pulp Fiction", "The Matrix"]
+      "favoriteMovies": [
+        "The Shawshank Redemption",
+        "Pulp Fiction",
+        "The Matrix"
+      ],
+      "id": "4985"
     },
     {
       "firstName": "Ava",
       "lastName": "Rodriguez",
       "username": "ava_rodriguez",
       "email": "ava.rodriguez@example.com",
-      "favoriteMovies": ["The Godfather", "Inception", "The Dark Knight"]
+      "favoriteMovies": [
+        "The Godfather",
+        "Inception",
+        "The Dark Knight"
+      ],
+      "id": "293a"
     },
     {
       "firstName": "Alexander",
       "lastName": "Perez",
       "username": "alexander_perez",
       "email": "alexander.perez@example.com",
-      "favoriteMovies": ["Schindler's List", "The Shawshank Redemption", "The Pianist"]
+      "favoriteMovies": [
+        "Schindler's List",
+        "The Shawshank Redemption",
+        "The Pianist"
+      ],
+      "id": "f4aa"
     },
     {
       "firstName": "Mia",
       "lastName": "Turner",
       "username": "mia_turner",
       "email": "mia.turner@example.com",
-      "favoriteMovies": ["Forrest Gump", "The Lord of the Rings: The Fellowship of the Ring", "The Dark Knight"]
+      "favoriteMovies": [
+        "Forrest Gump",
+        "The Lord of the Rings: The Fellowship of the Ring",
+        "The Dark Knight"
+      ],
+      "id": "8428"
+    },
+    {
+      "id": "b37a",
+      "username": "cane ",
+      "password": "rosso",
+      "firstname": "dio",
+      "lastname": "mio",
+      "email": "pippo@outlook.it"
+    },
+    {
+      "id": "f183",
+      "username": "cane ",
+      "password": "rosso",
+      "firstname": "dio",
+      "lastname": "mio",
+      "email": "pippo@outlook.it"
+    },
+    {
+      "id": "faab",
+      "username": "cane ",
+      "password": "rosso",
+      "firstname": "dio",
+      "lastname": "mio",
+      "email": "pippo@outlook.it"
+    },
+    {
+      "id": "45ad",
+      "username": "cane ",
+      "password": "rosso",
+      "firstname": "dio",
+      "lastname": "mio",
+      "email": "pippo@outlook.it"
+    },
+    {
+      "id": "0a49",
+      "username": "cane ",
+      "password": "rosso",
+      "firstname": "roma",
+      "lastname": "Ukkima",
+      "email": "gatto@topo.rat"
+    },
+    {
+      "id": "e4a5",
+      "username": "string",
+      "password": "string"
+    },
+    {
+      "id": "83d5",
+      "username": "string",
+      "password": "string"
+    },
+    {
+      "id": "719f",
+      "username": "string",
+      "password": "string"
+    },
+    {
+      "id": "2317",
+      "username": "string",
+      "password": "string"
+    },
+    {
+      "id": "7cb4",
+      "username": "string",
+      "password": "string"
+    },
+    {
+      "id": "ac91",
+      "username": "cane ",
+      "password": "rosso"
+    },
+    {
+      "id": "08eb",
+      "username": "string",
+      "password": "string"
+    },
+    {
+      "id": "c27f",
+      "username": "string",
+      "password": "string"
+    },
+    {
+      "id": "1657",
+      "username": "string",
+      "password": "string"
+    },
+    {
+      "id": "6d44",
+      "username": "string",
+      "password": "string"
+    },
+    {
+      "id": "28ea",
+      "username": "cane ",
+      "password": "rosso"
+    },
+    {
+      "id": "630f",
+      "username": "cane ",
+      "password": "rosso"
+    },
+    {
+      "id": "329d",
+      "username": "cane ",
+      "password": "rosso"
+    },
+    {
+      "id": "588d",
+      "username": "cane ",
+      "password": "rosso"
+    },
+    {
+      "id": "698c",
+      "username": "string",
+      "password": "string"
+    },
+    {
+      "id": "d176",
+      "username": "string",
+      "password": "string"
+    },
+    {
+      "id": "65d7",
+      "username": "string",
+      "password": "string"
+    },
+    {
+      "id": "671b",
+      "username": "string",
+      "password": "string"
+    },
+    {
+      "id": "7ede",
+      "username": "cane ",
+      "password": "rosso"
+    },
+    {
+      "id": "b9fb",
+      "username": "cane ",
+      "password": "rosso"
+    },
+    {
+      "id": "99a2",
+      "username": "cane ",
+      "password": "rosso"
+    },
+    {
+      "id": "82ee",
+      "username": "cane ",
+      "password": "rosso"
+    },
+    {
+      "id": "1db6",
+      "username": "cane ",
+      "password": "rosso"
+    },
+    {
+      "id": "dc7a",
+      "username": "cane ",
+      "password": "rosso"
+    },
+    {
+      "id": "12b3",
+      "username": "cane ",
+      "password": "rosso"
+    },
+    {
+      "id": "95a7",
+      "username": "cane ",
+      "password": "rosso"
+    },
+    {
+      "id": "8094",
+      "username": "cane ",
+      "password": "rosso"
+    },
+    {
+      "id": "e677",
+      "username": "cane ",
+      "password": "rosso"
+    },
+    {
+      "id": "f0b5",
+      "username": "cane ",
+      "password": "rosso"
+    },
+    {
+      "id": "2259",
+      "username": "cane ",
+      "password": "rosso"
+    },
+    {
+      "id": "9118",
+      "username": "cane ",
+      "password": "rosso"
+    },
+    {
+      "id": "5273",
+      "username": "cane ",
+      "password": "rosso"
     }
   ],
-  "movies":[
+  "movies": [
     {
       "film": "The Shawshank Redemption",
-      "regista": "Frank Darabont"
+      "regista": "Frank Darabont",
+      "id": "5313"
     },
     {
       "film": "The Godfather",
-      "regista": "Francis Ford Coppola"
+      "regista": "Francis Ford Coppola",
+      "id": "f72c"
     },
     {
       "film": "The Dark Knight",
-      "regista": "Christopher Nolan"
+      "regista": "Christopher Nolan",
+      "id": "6989"
     },
     {
       "film": "Schindler's List",
-      "regista": "Steven Spielberg"
+      "regista": "Steven Spielberg",
+      "id": "11a0"
     },
     {
       "film": "Pulp Fiction",
-      "regista": "Quentin Tarantino"
+      "regista": "Quentin Tarantino",
+      "id": "e0ed"
     },
     {
       "film": "The Lord of the Rings: The Return of the King",
-      "regista": "Peter Jackson"
+      "regista": "Peter Jackson",
+      "id": "c3ab"
     },
     {
       "film": "Forrest Gump",
-      "regista": "Robert Zemeckis"
+      "regista": "Robert Zemeckis",
+      "id": "86d2"
     },
     {
       "film": "Inception",
-      "regista": "Christopher Nolan"
+      "regista": "Christopher Nolan",
+      "id": "312a"
     },
     {
       "film": "The Lord of the Rings: The Fellowship of the Ring",
-      "regista": "Peter Jackson"
+      "regista": "Peter Jackson",
+      "id": "3515"
     },
     {
       "film": "The Lord of the Rings: The Two Towers",
-      "regista": "Peter Jackson"
+      "regista": "Peter Jackson",
+      "id": "e108"
     },
     {
       "film": "Fight Club",
-      "regista": "David Fincher"
+      "regista": "David Fincher",
+      "id": "2cbc"
     },
     {
       "film": "Goodfellas",
-      "regista": "Martin Scorsese"
+      "regista": "Martin Scorsese",
+      "id": "fea6"
     },
     {
       "film": "The Matrix",
-      "regista": "The Wachowskis"
+      "regista": "The Wachowskis",
+      "id": "1c96"
     },
     {
       "film": "The Silence of the Lambs",
-      "regista": "Jonathan Demme"
+      "regista": "Jonathan Demme",
+      "id": "d0f6"
     },
     {
       "film": "The Green Mile",
-      "regista": "Frank Darabont"
+      "regista": "Frank Darabont",
+      "id": "72fb"
     },
     {
       "film": "The Departed",
-      "regista": "Martin Scorsese"
+      "regista": "Martin Scorsese",
+      "id": "bf16"
     },
     {
       "film": "Se7en",
-      "regista": "David Fincher"
+      "regista": "David Fincher",
+      "id": "023a"
     },
     {
       "film": "Gladiator",
-      "regista": "Ridley Scott"
+      "regista": "Ridley Scott",
+      "id": "8b52"
     },
     {
       "film": "The Usual Suspects",
-      "regista": "Bryan Singer"
+      "regista": "Bryan Singer",
+      "id": "830c"
     },
     {
       "film": "American History X",
-      "regista": "Tony Kaye"
+      "regista": "Tony Kaye",
+      "id": "51d5"
     },
     {
       "film": "The Prestige",
-      "regista": "Christopher Nolan"
+      "regista": "Christopher Nolan",
+      "id": "c427"
     },
     {
       "film": "The Pianist",
-      "regista": "Roman Polanski"
+      "regista": "Roman Polanski",
+      "id": "9960"
     },
     {
       "film": "Leon: The Professional",
-      "regista": "Luc Besson"
+      "regista": "Luc Besson",
+      "id": "a2cc"
     },
     {
       "film": "American Beauty",
-      "regista": "Sam Mendes"
+      "regista": "Sam Mendes",
+      "id": "e222"
     },
     {
       "film": "The Intouchables",
-      "regista": "Olivier Nakache, Éric Toledano"
+      "regista": "Olivier Nakache, Éric Toledano",
+      "id": "d6bb"
     },
     {
       "film": "Schindler's List",
-      "regista": "Steven Spielberg"
+      "regista": "Steven Spielberg",
+      "id": "b599"
     },
     {
       "film": "Saving Private Ryan",
-      "regista": "Steven Spielberg"
+      "regista": "Steven Spielberg",
+      "id": "eac3"
     },
     {
       "film": "The Lion King",
-      "regista": "Roger Allers, Rob Minkoff"
+      "regista": "Roger Allers, Rob Minkoff",
+      "id": "5eae"
     },
     {
       "film": "The Sixth Sense",
-      "regista": "M. Night Shyamalan"
+      "regista": "M. Night Shyamalan",
+      "id": "aea6"
     },
     {
       "film": "The Departed",
-      "regista": "Martin Scorsese"
+      "regista": "Martin Scorsese",
+      "id": "1f6f"
     }
   ],
-  "favoritesMovies":[]
+  "favoritesMovies": []
 }
